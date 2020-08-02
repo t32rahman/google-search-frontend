@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <link rel="stylesheet" href="./styles/search.css">
+    <link rel="icon" href="./img/google-faviconwebp">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="search.html">
+            <img src="./img/google-faviconwebp" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+            Google
+        </a>
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link" href="search.html">Search</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="images_search.html">Images</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="adv_search.html">Advanced Search</a>
+            </li>
+          </ul>
+    </nav>
+    <div class="title">
+        Advanced Search
+    </div>
+    <div class="as_search">
+        <form action="https://www.google.com/search" method="GET">
+            <table class="table">
+                <tr>
+                    <th scope="col">Find Words with...</th>
+                    <th scope="col"></th>
+                </tr>
+                <tr>
+                    <td>all these words:</td>
+                    <td>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="as_q" name="as_q">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>this exact word or phrase:</td>
+                    <td>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="as_epq" name="as_epq">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>any of these words:</td>
+                    <td>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="as_oq" name="as_oq">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>none of these words:</td>
+                    <td>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="as_eq" name="as_eq">
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <div class="form-group center">
+                <button type="submit" class="btn btn-primary" style="margin-left: 300px;">Advanced Search</button>
+            </div>
+        </form>
+        
+    </div>
+</body>
+</html>
