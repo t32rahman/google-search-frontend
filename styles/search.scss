@@ -1,10 +1,10 @@
-$verticle-margin: 200px;
-$horizontal-margin: 610px;
+$verticle-margin: 5%;
+$horizontal-margin: 10%;
+
 .search {
-    margin-top: $verticle-margin;
-    margin-bottom: $verticle-margin;
-    margin-left: $horizontal-margin;
-    margin-right: $horizontal-margin;
+    display: block;
+    margin: auto;
+    margin-top: 10%;
 }
 
 .as_search {
@@ -43,9 +43,43 @@ $horizontal-margin: 610px;
     padding-left: 35px;
 }
 
+#big-logo {
+    width: 300px;
+}
+
+#google-button, #lucky-button {
+    background-color: #f2f2f2; 
+    color: rgba(0, 0, 0, 0.473); 
+    border: none;
+    position: center;
+}
+
+
+#google-button {
+    margin-left: 20%;
+}
+
+@media (max-width:730px) {
+    #google-button, #lucky-button {
+        display: none;
+    }
+}
+@media (max-width: 1600px) {
+    #google-button {
+        margin-left: 15%;
+    }
+}
+@media (min-width: 1601px) {
+    #google-button, #lucky-button {
+        width: 20%;
+    }
+    #google-button {
+        margin-left: 30%;
+    }
+}
+
 #q {
-    margin-left: 55px;
-    width: 600px;
     border-radius: 50px;
+    margin: auto;
     padding-left: 20px;
 }

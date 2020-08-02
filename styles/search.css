@@ -1,8 +1,7 @@
 .search {
-  margin-top: 200px;
-  margin-bottom: 200px;
-  margin-left: 610px;
-  margin-right: 610px; }
+  display: block;
+  margin: auto;
+  margin-top: 10%; }
 
 .as_search {
   margin: auto;
@@ -12,7 +11,7 @@
   color: #d93025;
   font-size: 20px;
   margin-top: 20px;
-  margin-left: 40px; }
+  margin-left: 20px; }
 
 .overlap {
   position: relative; }
@@ -34,10 +33,33 @@
 .padding {
   padding-left: 35px; }
 
+#big-logo {
+  width: 300px; }
+
+#google-button, #lucky-button {
+  background-color: #f2f2f2;
+  color: rgba(0, 0, 0, 0.473);
+  border: none;
+  position: center; }
+
+#google-button {
+  margin-left: 20%; }
+
+@media (max-width: 730px) {
+  #google-button, #lucky-button {
+    display: none; } }
+@media (max-width: 1600px) {
+  #google-button {
+    margin-left: 15%; } }
+@media (min-width: 1601px) {
+  #google-button, #lucky-button {
+    width: 20%; }
+
+  #google-button {
+    margin-left: 30%; } }
 #q {
-  margin-left: 55px;
-  width: 600px;
   border-radius: 50px;
+  margin: auto;
   padding-left: 20px; }
 
 /*# sourceMappingURL=search.css.map */
