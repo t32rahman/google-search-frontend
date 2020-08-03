@@ -20,9 +20,8 @@
   color: #4285f4;
   font: 16px/16px roboto-regular, arial, sans-serif;
   white-space: nowrap;
-  margin-left: 475px;
   position: absolute;
-  top: 100px; }
+  margin-left: 60%; }
 
 .center {
   display: block;
